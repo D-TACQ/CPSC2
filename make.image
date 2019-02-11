@@ -1,0 +1,6 @@
+cp ~/PROJECTS/ACQ400/linux-xlnx/arch/arm/boot/zImage .
+cp ~/PROJECTS/buildroot/output/images/uramdisk.image.gz .
+cp /home/pgm/PROJECTS/ACQ400/linux-xlnx/arch/arm/boot/dts/picozed-zynq7.dtb .
+dd if=uramdisk.image.gz of=ramdisk.image.gz bs=64 skip=1
+/usr/bin/mkimage -f uImage.its uImage.ub
+
