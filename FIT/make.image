@@ -1,5 +1,5 @@
 cp ../../ACQ400/linux-xlnx/arch/arm/boot/zImage .
-cp ../..//buildroot.cpsc2/output/images/rootfs.ext2 .
+cp ../../buildroot.cpsc2/output/images/rootfs.ext2 .
 gzip rootfs.ext2
 cp ../../ACQ400/linux-xlnx/arch/arm/boot/dts/picozed-zynq7.dtb .
 /usr/bin/mkimage -f uImage.its uImage.ub

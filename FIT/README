@@ -1,1 +1,9 @@
 CREATE A FIT IMAGE for PZ
+
+PROJECTS/buildroot.cpsc2
+PROJECTS/ACQ400/linux-xlnx
+PROJECTS/CPSC2/FIT : we are here
+
+./make.image
+scp uImage.ub user@endor:/home/tftpboot/cpsc2
+
