@@ -23,7 +23,7 @@
 
         ramdisk@1 {
             description = "ramdisk";
-            data = /incbin/("./ramdisk.image.gz");
+            data = /incbin/("./rootfs.ext2.gz");
             type = "ramdisk";
             arch = "arm";
             os = "linux";
@@ -48,7 +48,7 @@
         default = "config@1";
 
         config@1 {
-            description = "custom conf";
+            description = "cpsc2";
             kernel = "kernel@1";
             ramdisk = "ramdisk@1";
             fdt = "fdt@1";
