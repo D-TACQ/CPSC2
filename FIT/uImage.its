@@ -35,7 +35,7 @@
 
         fdt@1 {
             description = "devicetree";
-            data = /incbin/("./picozed-zynq7.dtb");
+            data = /incbin/("./cpsc2-zynq7.dtb");
             type = "flat_dt";
             arch = "arm";
             compression = "none";
