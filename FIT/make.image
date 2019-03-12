@@ -3,4 +3,4 @@ cp ../../buildroot.cpsc2/output/images/rootfs.ext2 .
 gzip rootfs.ext2
 cp ../../ACQ400/linux-xlnx/arch/arm/boot/dts/cpsc2-zynq7.dtb .
 /usr/bin/mkimage -f uImage.its uImage.ub
-
+[ "$USER" = "pgm" ] && scp uImage.ub peter@endor:/home/tftpboot/cpsc2
